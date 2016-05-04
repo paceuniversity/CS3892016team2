@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/abc_input_method_navigation_guard" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Create Championships"
+        android:id="@+id/textView11"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="35dp"
+        android:textStyle="bold|italic"
+        android:theme="@style/TextAppearance.AppCompat.Title.Inverse"
+        android:textColor="@color/highlighted_text_material_light"
+        android:textColorHint="@color/abc_primary_text_disable_only_material_dark"
+        android:textColorHighlight="@color/abc_primary_text_disable_only_material_dark"
+        android:shadowColor="@android:color/primary_text_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Name:"
+        android:id="@+id/textView12"
+        android:textColor="@color/accent_material_light"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ChampionshipName"
+        android:textColor="@color/accent_material_dark"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="--------------------------------------------------------------------" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:id="@+id/textView13"
+        android:textSize="20dp"
+        android:textColor="@color/accent_material_light"
+        android:editable="false"
+        android:layout_below="@+id/ChampionshipName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ChampionshipLocation"
+        android:textColor="@color/accent_material_dark"
+        android:textSize="20dp"
+        android:text="--------------------------------------------------------------------"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/ChampionshipLocation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:textColor="@color/accent_material_light" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/ChampionshipDate"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/accent_material_dark"
+        android:textSize="20dp"
+        android:text="---------------------------------------------------------------------" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time:"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/ChampionshipDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:textColor="@color/accent_material_light" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/ChampionshipTime"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="--------------------------------------------------------------------------------------"
+        android:textColor="@color/accent_material_dark"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Creator:"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/ChampionshipTime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:textColor="@color/accent_material_light" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ChampionshipCreator"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="--------------------------------------------------------------------"
+        android:layout_alignRight="@+id/ChampionshipLocation"
+        android:layout_alignEnd="@+id/ChampionshipLocation"
+        android:textColor="@color/accent_material_dark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type:"
+        android:id="@+id/textView17"
+        android:layout_below="@+id/ChampionshipCreator"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/accent_material_light"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friendly"
+            android:id="@+id/ChampionshipFriendlyType"
+            android:layout_below="@+id/textView17"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:checked="false"
+            android:textSize="20dp"
+            android:textColor="@color/accent_material_light"
+            android:contextClickable="true"
+            android:buttonTint="@color/accent_material_dark"
+            android:background="@color/abc_background_cache_hint_selector_material_dark"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tournament"
+            android:id="@+id/ChampionshipTounramentType"
+            android:checked="false"
+            android:textSize="20dp"
+            android:textColor="@color/accent_material_light"
+            android:contextClickable="true"
+            android:buttonTint="@color/accent_material_dark"
+            android:background="@color/abc_background_cache_hint_selector_material_dark"
+            android:clickable="true"
+            android:layout_alignTop="@+id/ChampionshipFriendlyType"
+            android:layout_centerHorizontal="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:enabled="true"
+            android:allowUndo="true" />
+
+
+
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Championship"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15dp"
+        android:textColor="@android:color/background_light"
+        android:background="@color/accent_material_light"
+        android:clickable="true"
+        android:elegantTextHeight="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
+
+</RelativeLayout>

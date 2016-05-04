@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="cs389.paceuniversity.meupipa.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="463dp"
+            android:id="@+id/scrollView"
+            android:layout_gravity="center_horizontal"
+            android:fillViewport="false">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Championship"
+                android:id="@+id/createChampionship"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="createChampionClicked"
+                android:enabled="true"
+                android:background="#000e8a"
+                android:textColor="#ffee38" />
+        </ScrollView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/design_navigation_view"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu"
+        >
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

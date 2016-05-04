@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vinacovre.myapplication.TutorialFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/tuto_bg_kite"
+        android:layout_marginBottom="50dp"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:gravity="bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Materials"
+                android:layout_marginTop="13dp"
+                android:id="@+id/tuto_materials"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/text_tuto_materials"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/tuto_materials"
+                android:layout_alignParentEnd="true">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Step by Step"
+                android:id="@+id/tuto_steps"
+                android:layout_below="@+id/text_tuto_materials"
+                android:layout_marginTop="-25dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Make a cross with the two sticks, with the shorter stick placed horizontally across the longer stick. Make sure that both sides of the cross piece is equal in width."
+                android:id="@+id/tuto_step1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_below="@+id/text_tuto_materials"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tuto_img1"
+                android:src="@mipmap/tuto_img1"
+                android:adjustViewBounds="true"
+                android:maxWidth="1000dp"
+                android:maxHeight="1000dp"
+                android:layout_marginTop="13dp"
+                android:layout_below="@+id/tuto_step1"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Tie the two sticks together with the string in such a way as to make sure that they are at right angles to each other. A good way to ensure that the joint is strong to put a dab of glue to stick it in place."
+                android:id="@+id/tuto_step2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_below="@+id/tuto_img1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Cut a notch at each end of both sticks. Make it deep enough for the type of string you are using to fit in to. Cut a piece of string long enough to stretch all around the kite frame. Make a loop in the top notch and fasten it by wrapping the string around the stick. Stretch the string through the notch at one end of the cross-piece, and make another loop at the bottom. Stretch the string through the notch at one end of the loop at the bottom. Stretch the string through the notch at the other end of the cross-piece. Finish by wrapping the string a few times around the top of the stick and cutting off what you don't need. This string frame must be taut, but not so tight as to warp the sticks."
+                android:id="@+id/tuto_step3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_below="@+id/tuto_step2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tuto_img2"
+                android:src="@mipmap/tuto_img2"
+                android:adjustViewBounds="true"
+                android:maxWidth="1000dp"
+                android:maxHeight="1000dp"
+                android:layout_marginTop="13dp"
+                android:layout_below="@+id/tuto_step3"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Lay the sail material flat and place the stick frame face down on top. Cut around it, leaving about 2-3cm for a margin. Fold these edges over the string frame and tape or glue it down so that the material is tight."
+                android:id="@+id/tuto_step4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_below="@+id/tuto_img2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Cut a piece of string about 122 cm long. and tie one end to the loop at the other end of the string to the loop at the bottom. Tie another small loop in the string just above the intersection of the two cross pieces. This will be the kite's bridle, the string to which the flying line is attached."
+                android:id="@+id/tuto_step5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_below="@+id/tuto_step4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tuto_img3"
+                android:src="@mipmap/tuto_img3"
+                android:adjustViewBounds="true"
+                android:maxWidth="1000dp"
+                android:maxHeight="1000dp"
+                android:layout_marginTop="13dp"
+                android:layout_below="@+id/tuto_step5"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. Make a tail by tying a small ribbon roughly every 10cm along the length of string. Attach the tail to the loop at the bottom of the kite."
+                android:id="@+id/tuto_step6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_below="@+id/tuto_img3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7. Decorate!"
+                android:id="@+id/tuto_step7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_below="@+id/tuto_step6"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="15dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

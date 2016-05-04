@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@mipmap/tuto_bg_kite">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:fillViewport="true">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="33dp"
+        android:text="Championship Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/ChampionshipName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="33dp"
+        android:imeOptions="actionSend"
+        android:inputType="text" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="fill_parent"
+        android:layout_height="30px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ChampionshipName"
+        android:layout_marginLeft="33dp" />
+
+    <TextView
+        android:id="@+id/ChampionshipType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ChampionshipName"
+        android:layout_alignStart="@+id/ChampionshipName"
+        android:layout_below="@+id/space"
+        android:layout_marginLeft="33dp"
+        android:text="Championship Type"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Space
+        android:id="@+id/space10"
+        android:layout_width="fill_parent"
+        android:layout_height="30px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ChampionshipType"
+        android:layout_marginLeft="33dp" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/RadioGroupChampionship"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ChampionshipDetails"
+        android:layout_below="@+id/ChampionshipType"
+        android:layout_marginLeft="33dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_championship_friendly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/championship_friendly" />
+        <!--android:onClick="onRadioButtonClicked"-->
+        <RadioButton
+            android:id="@+id/radio_championship_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/championship_normal" />
+        <!--android:onClick="onRadioButtonClicked"-->
+    </RadioGroup>
+
+    <Space
+        android:id="@+id/space11"
+        android:layout_width="fill_parent"
+        android:layout_height="30px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/space10"
+        android:layout_marginLeft="33dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Time"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ChampionshipTime"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:inputType="time"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Date"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ChampionshipDate"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:inputType="date"
+        android:textSize="20dp" />
+
+    <!--<RelativeLayout-->
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:fillViewport="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:text="Address"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/ChampionshipLocation"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true" />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="New Text"-->
+        <!--android:id="@+id/textView4" />-->
+
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_below="@+id/ChampionshipLocation"
+            android:layout_toEndOf="@+id/textView6"
+            android:entries="@array/city_arrays"
+            android:prompt="@string/select"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:id="@+id/textView6"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_below="@+id/ChampionshipLocation"
+        android:layout_alignStart="@+id/ChampionshipLocation" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/ChampionshipDescription"
+        android:layout_weight="0.69" />
+
+    <Button
+        android:id="@+id/ChampionshipNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:clickable="false"
+        android:text="Next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <!--</RelativeLayout>-->
+
+</LinearLayout>
+</ScrollView>

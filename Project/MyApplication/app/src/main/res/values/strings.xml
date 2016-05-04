@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Meu Pipa</string>
+    <string name="splash_description">The kite flyers social network</string>
+    <string name="action_about">About</string>
+    <string name="action_contact">Contact</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="championship_friendly">Friendly Championship</string>
+    <string name="championship_normal">Competitive Championship</string>
+    <string name="title_section0">Home</string>
+    <string name="title_section1">Cups</string>
+    <string name="title_section2">Groups</string>
+    <string name="title_section3">Tutorials</string>
+    <string name="profile_bio_title">Bio</string>
+    <string name="profile_facebook_title">Facebook</string>
+    <string name="profile_facebook_content"><a href="https://facebook.com/viniciuscovre">facebook.com/viniciuscovre</a></string>
+    <string name="underscore">
+        ___________________________________________________
+    </string>
+    <string name="profile_bio_content">
+        Kite lover and computer science student living in downtown manhattan. Let\'s kite somewhere around. Love flying kites in the Brooklyn Bridge Park.
+    </string>
+    <string name="about_content">
+        Meu Pipa is an app that allows you to quickly and easily find kite championships and join them. Use a location to see where people are currently playing or planning on playing. You can also find information on how to build your own kites.
+    </string>
+    <string name="about_authors">
+        Developed by: Christian O\'Brien, Michael Rodriguez, Ryan Faranda &amp; Vinicius Covre.
+    </string>
+    <string name="about_link_git"><a href="https://github.com/paceuniversity/cs3892016team2/wiki">github.com/MeuPipa</a></string>
+    <string name="contact_link_fb_chris"><a href="https://www.facebook.com/iwasonceborn">facebook.com/christian</a></string>
+    <string name="contact_link_fb_mike"><a href="https://www.facebook.com/1486156362">facebook.com/michael</a></string>
+    <string name="contact_link_fb_ryan"><a href="https://www.facebook.com/ryan.faranda">facebook.com/ryan</a></string>
+    <string name="contact_link_fb_vini"><a href="https://www.facebook.com/viniciuscovre">facebook.com/vinicius</a></string>
+
+    <string name="tuto_materials"><![CDATA[<p>&#8226; Scissors<br />&#8226; Tissue paper / newspaper / bag (big) <br />&#8226; 2 wooden dowels<br />&#8226; Tape<br />&#8226; Yard stick<br />&#8226; Watercolor pen<br />&#8226; Toothpicks<br />&#8226; Ribbon String</p>]]>
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_about">About Meu Pipa</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_contact">Developers Contact</string>
+
+
+    <string name="select">Choose City</string>
+
+
+    <string-array name="city_arrays">
+        <item>Sao Paolo</item>
+        <item>Rio de Janeiro</item>
+        <item>Salvador</item>
+        <item>Fortaleza</item>
+        <item>Belo Horizonte</item>
+        <item>Brasilia</item>
+        <item>Curitiba</item>
+        <item>Manaus</item>
+        <item>Recife</item>
+        <item>Belem</item>
+    </string-array>
+
+
+</resources>

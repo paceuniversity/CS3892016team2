@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="_________"
+        android:id="@+id/championshipName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please provide information to add yourself to the championship list"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/space5"
+        android:layout_alignParentStart="true" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_below="@+id/championshipName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/space5" />
+
+    <Space
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/space6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name:"
+        android:id="@+id/textView13"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/space6" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerName"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true" />
+
+    <Space
+        android:layout_width="400dp"
+        android:layout_height="20dp"
+        android:id="@+id/space7"
+        android:layout_below="@+id/playerName"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Adress:"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/space7"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerAdress"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentStart="true" />
+
+    <Space
+        android:layout_width="400dp"
+        android:layout_height="20dp"
+        android:id="@+id/space8"
+        android:layout_below="@+id/playerAdress"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Phone Number:"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/space8"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerPhoneNumber"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentStart="true" />
+
+    <Space
+        android:layout_width="400dp"
+        android:layout_height="20dp"
+        android:id="@+id/space9"
+        android:layout_below="@+id/playerPhoneNumber"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Skill:"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/space9"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerSkill"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentStart="true" />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+
+        android:src="@android:drawable/ic_input_add"
+        android:layout_alignTop="@+id/playerSkill"
+        android:layout_toEndOf="@+id/playerSkill"
+        android:layout_marginStart="40dp" />
+
+</RelativeLayout>

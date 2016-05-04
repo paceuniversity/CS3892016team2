@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="com.vinacovre.myapplication.ChampionshipsFragment">-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="20dp"
+        android:src="@android:drawable/ic_input_add" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:id="@+id/championshipListView"
+        android:layout_gravity="center_horizontal|bottom"
+        android:choiceMode="none"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true"
+        android:stackFromBottom="false"
+        android:nestedScrollingEnabled="true"
+        android:layout_below="@+id/map_fragment"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+    <EditText
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:imeOptions="actionSend"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search!"
+        android:id="@+id/Search"
+        android:layout_below="@+id/searchText"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right|top"
+        android:layout_alignParentEnd="true" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/searchText"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map_fragment"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
+    <!--</FrameLayout>-->
