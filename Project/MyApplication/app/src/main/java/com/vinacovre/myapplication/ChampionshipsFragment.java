@@ -181,9 +181,15 @@ public class ChampionshipsFragment extends Fragment implements OnMapReadyCallbac
 //            map.addMarker(new MarkerOptions().position(new LatLng(-1.468236, -48.473668)).title("Marker"));
 //        }
 
+        map.addMarker(new MarkerOptions().position(new LatLng(-3.732107, -38.525680)).title("Fortaleza Pipa"));
+        map.addMarker(new MarkerOptions().position(new LatLng(-12.972584, -38.492443)).title("Kite Fight"));
+        map.addMarker(new MarkerOptions().position(new LatLng(-22.908458, -43.191578)).title("Our friendly meet"));
+        map.addMarker(new MarkerOptions().position(new LatLng(-15.792428, -47.866838)).title("Brasilia Kite"));
+        map.addMarker(new MarkerOptions().position(new LatLng(-19.916525, -43.923245)).title("grajau combate"));
+        map.addMarker(new MarkerOptions().position(new LatLng(-25.429371, -49.265442)).title("combate no morro alemon"));
 
 
-        map.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
+
     }
 
 //    @Override

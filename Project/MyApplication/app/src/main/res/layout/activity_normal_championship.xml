@@ -16,16 +16,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Administrator:"
-        android:textColor="@color/colorPrimary"
-        android:id="@+id/Admin"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/ChampionshipName"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Location"
         android:textColor="@color/colorPrimary"
         android:id="@+id/Location"
@@ -40,17 +30,17 @@
         android:id="@+id/ChampionshipType"
         android:textColor="@color/colorPrimary"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="63dp" />
+        android:layout_below="@+id/ChampionshipName"
+        android:layout_alignParentStart="true" />
 
     <fragment
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:id="@+id/map_fragment"
-        android:layout_below="@+id/Admin"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/ChampionshipName"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="66dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -59,14 +49,6 @@
         android:text="Champ Name"
         android:id="@+id/ChampionshipName"
         android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="creator"
-        android:id="@+id/ChampionshipCreator"
-        android:layout_above="@+id/map_fragment"
-        android:layout_toEndOf="@+id/Admin" />
 
     <TextView
         android:layout_width="wrap_content"

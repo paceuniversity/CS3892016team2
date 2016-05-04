@@ -18,6 +18,7 @@ import com.google.android.gms.maps.*;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.*;
 
+
 public class NormalChampionshipActivity extends AppCompatActivity implements OnMapReadyCallback {
 
 
@@ -59,7 +60,6 @@ public class NormalChampionshipActivity extends AppCompatActivity implements OnM
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_normal_championship);
         Firebase.setAndroidContext(this);
-        setUpMapIfNeeded();
         firebaseRef = new Firebase(FIREBASE_URL);
         champName = (TextView) findViewById(R.id.ChampionshipName);
         //champCreator = (TextView) findViewById(R.id.ChampionshipCreator);
@@ -75,6 +75,7 @@ public class NormalChampionshipActivity extends AppCompatActivity implements OnM
 //        champName.setText(champ.getChampionshipName());
 
         pullsearch();
+        setUpMapIfNeeded();
        // champName.setText(champ.getChampionshipName());
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -117,9 +118,9 @@ public class NormalChampionshipActivity extends AppCompatActivity implements OnM
     }
 
     @Override
-    public void onMapReady(GoogleMap mMap) {
+    public void onMapReady(GoogleMap map) {
 //        if (champCity == "Sao Paolo" ){
-        mMap.addMarker(new MarkerOptions().position(new LatLng(-23.576016, -46.628434)).title("Marker"));
+        map.addMarker(new MarkerOptions().position(new LatLng(-3.732107, -38.525680)).title("Fortaleza Pipa"));
          // Marker saoPaolo = map.addMarker(new MarkerOptions().position(new LatLng(-23.576016, -46.628434)).title("Marker"));
             //moveToCurrentLocation(saoPaolo.getPosition());
 //        }
